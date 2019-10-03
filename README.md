@@ -6,11 +6,12 @@ Course by [Andrew Mead](https://mead.io)
 
 - [x] Type definitions (Schemas)
 - [x] Resolvers
+- [x] Scalar types (default and customs)
 - [x] Queries
 - [x] Mutations
-- [x] Scalar types (default and customs)
-- [ ] Subscriptions
-- [ ] Prisma
+- [x] Subscription
+  > Enums are cool!
+- [ ] Db storage with Prisma
 - [ ] Authentication
 - [ ] Pagination & sorting
 - [ ] Prod deployment
@@ -21,7 +22,7 @@ Course by [Andrew Mead](https://mead.io)
 - Node Js
 - Babel
 - Nodemon
-- Graphql-yoga
+- GraphQL-yoga
 - Prisma
 
 > More to be added later on
