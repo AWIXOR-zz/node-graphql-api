@@ -1,0 +1,29 @@
+type User {
+  id: ID! @id @unique
+  username: String!
+  email: String! @unique
+  movies: [Movie!]! @relation(name: "MovieToUser", onDelete: CASCADE)
+  reviews: [Review!]! @relation(name: "ReviewToUser", onDelete: CASCADE)
+}
+
+type Movie {
+  id: ID! @id @unique
+  title: String!
+  genre: Genre!
+  director: User! @relation(name: "MovieToUser", onDelete: SET_NULL)
+  reviews: [Review!]! @relation(name: "ReviewToMovie", onDelete: CASCADE)
+}
+
+enum Genre {
+  SciFi
+  Action
+  Drama
+  Fantasy
+}
+
+type Review {
+  id: ID! @id @unique
+  text: String!
+  auhtor: User! @relation(name: "ReviewToUser", onDelete: SET_NULL)
+  movie: Movie! @relation(name: "ReviewToMovie", onDelete: SET_NULL)
+}

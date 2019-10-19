@@ -7,15 +7,15 @@ Course by [Andrew Mead](https://mead.io)
 - [x] Type definitions (Schemas)
 - [x] Resolvers
 - [x] Scalar types (default and customs)
+  > Enums are cool!
 - [x] Queries
 - [x] Mutations
 - [x] Subscription
-  > Enums are cool!
-- [ ] Db storage with Prisma
+- [x] Db storage with Prisma
 - [ ] Authentication
 - [ ] Pagination & sorting
 - [ ] Prod deployment
-- [ ] Connecting it with my Gatsby app
+- [ ] Connecting it with my React app
 
 ## Tools used
 
@@ -24,5 +24,8 @@ Course by [Andrew Mead](https://mead.io)
 - Nodemon
 - GraphQL-yoga
 - Prisma
+- Prisma-binding
+- PostgreSQL
+- Docker
 
 > More to be added later on
